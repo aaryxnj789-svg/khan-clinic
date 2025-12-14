@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tabrez Khan | Holistic General Medicine Hubli</title>
+    <meta name="description" content="Experience a new standard of primary care with Dr. Tabrez Khan in Keshawapur, Hubli. Specializing in General Medicine, Diabetes Care, and Preventive Health.">
+    <meta name="keywords" content="Dr Tabrez Khan, General Physician Hubli, Diabetes Doctor Keshawapur, Dr Khan Clinic, Best Doctor Hubli">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f7f5',
+                            100: '#e3ebe6',
+                            200: '#c5d9cd',
+                            300: '#9bbfa8',
+                            400: '#72a184',
+                            500: '#528565', // Primary Brand Color
+                            600: '#3f694e',
+                            800: '#355240',
+                            900: '#2c4335',
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        charcoal: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    letterSpacing: {
+                        'widest-xl': '0.2em',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom "Quiet Luxury" Styles */
+        body {
+            background-color: #fafaf9; /* Stone-50 */
+            color: #1c1917; /* Stone-900 */
+        }
+        
+        /* Smooth Scrolling Wrapper (Lenis-like feel) */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Typography Hierarchy */
+        h1, h2, h3, h4 {
+            font-weight: 400; /* Editorial style relies on lighter weights */
+        }
+
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        /* Glassmorphism */
+        .glass-nav {
+            background: rgba(250, 250, 249, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        /* Animations */
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .parallax-container {
+            overflow: hidden;
+        }
+        .parallax-img {
+            transition: transform 0.1s linear;
+        }
+
+        /* Magnetic Button Effect */
+        .btn-magnetic {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Line clamping for clean cards */
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* Custom Selection Color */
+        ::selection {
+            background: #c5d9cd; /* Sage-200 */
+            color: #1c1917;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Tabrez Khan",
+      "medicalSpecialty": "General Practitioner",
+      "image": "https://placehold.co/600x600/528565/FFFFFF?text=Dr+Tabrez",
+      "url": "https://drtabrezkhan.in",
+      "telephone": "+916361490577",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "156/A, Patil Chawl, Baitulmal Masjid Complex, Keshwapur",
+        "addressLocality": "Hubli",
+        "addressRegion": "Karnataka",
+        "postalCode": "580023",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "14:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "17:00",
+          "closes": "23:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-500" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="group flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full border border-sage-300 flex items-center justify-center text-sage-800 group-hover:bg-sage-50 transition-colors">
+                    <span class="font-serif font-bold italic">TK</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg tracking-wide text-stone-900 leading-none">Dr. Tabrez Khan</span>
+                    <span class="font-sans text-[10px] tracking-widest-xl uppercase text-sage-600 mt-1">General Medicine</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-12 font-sans text-xs uppercase tracking-widest text-stone-600 font-medium">
+                <a href="#philosophy" class="hover:text-sage-800 transition-colors relative group">
+                    Philosophy
+                    <span class="absolute -bottom-1 left-0 w-0 h-px bg-sage-800 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#services" class="hover:text-sage-800 transition-colors relative group">
+                    Expertise
+                    <span class="absolute -bottom-1 left-0 w-0 h-px bg-sage-800 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#visit" class="hover:text-sage-800 transition-colors relative group">
+                    Visit Clinic
+                    <span class="absolute -bottom-1 left-0 w-0 h-px bg-sage-800 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="https://wa.me/916361490577" class="px-6 py-3 bg-stone-900 text-white rounded-full hover:bg-sage-800 transition-colors btn-magnetic">
+                    Book Appointment
+                </a>
+            </div>
+
+            <button class="md:hidden text-stone-800" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-stone-50/98 backdrop-blur-xl flex items-center justify-center">
+        <button class="absolute top-6 right-6" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+            <i data-lucide="x" class="w-8 h-8 text-stone-400"></i>
+        </button>
+        <div class="flex flex-col gap-8 text-center font-serif text-3xl text-stone-800">
+            <a href="#philosophy" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Philosophy</a>
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Expertise</a>
+            <a href="#visit" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Visit Clinic</a>
+            <a href="tel:+916361490577" class="text-sage-600 text-lg font-sans tracking-widest mt-4">+91 63614 90577</a>
+        </div>
+    </div>
+
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-stone-50 via-sage-50/30 to-stone-100 z-0"></div>
+        <div class="absolute top-1/4 left-10 w-64 h-64 bg-sage-200/20 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-stone-200/40 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="block text-sage-600 text-xs md:text-sm font-sans tracking-widest-xl uppercase mb-6 reveal-text">
+                Established 2024 • Hubli
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-stone-900 leading-[1.1] mb-8 reveal-text text-balance">
+                Focused on <br> <i class="font-light text-sage-700">Your Health.</i>
+            </h1>
+            <p class="font-sans text-stone-600 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mb-12 reveal-text">
+                A sanctuary for modern medicine. Bridging academic excellence with compassionate, patient-centric care in the heart of Keshawapur.
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 reveal-text">
+                <a href="#visit" class="group flex items-center gap-2 text-stone-900 font-medium border-b border-stone-900 pb-1 hover:text-sage-700 hover:border-sage-700 transition-all">
+                    Plan Your Visit <i data-lucide="arrow-down-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <span class="text-[10px] tracking-widest uppercase">Scroll</span>
+            <div class="w-px h-12 bg-stone-400"></div>
+        </div>
+    </header>
+
+    <section id="philosophy" class="py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative reveal-text">
+                <div class="aspect-[4/5] bg-stone-100 overflow-hidden rounded-sm parallax-container">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" 
+                         alt="Dr. Tabrez Khan Portrait" 
+                         class="w-full h-full object-cover parallax-img hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 shadow-xl max-w-xs border border-stone-100">
+                    <p class="font-serif text-xl italic text-sage-800">"True healing begins with listening."</p>
+                </div>
+            </div>
+
+            <div class="reveal-text">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-px w-12 bg-sage-400"></div>
+                    <span class="text-xs font-sans tracking-widest-xl uppercase text-sage-600">The Practitioner</span>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl text-stone-900 mb-8 leading-tight">
+                    Dr. Tabrez Khan <br> <span class="text-stone-400 text-2xl block mt-2">MBBS, PGDADC (Diabetes Care)</span>
+                </h2>
+                <div class="space-y-6 text-stone-600 font-light leading-relaxed">
+                    <p>
+                        Medicine is not merely about prescriptions; it is about partnership. Since commencing practice in 2023, Dr. Khan has dedicated himself to a philosophy where the patient's voice is the most critical diagnostic tool.
+                    </p>
+                    <p>
+                        A graduate of <strong class="text-stone-800 font-medium">Al-Ameen Medical College</strong>, Dr. Khan further specialized with a Post Graduate Diploma in Advanced Diabetes Care. This unique blend of general medical expertise and specialized chronic disease management allows Dr. Khan's Clinic to offer a holistic roadmap to wellness.
+                    </p>
+                    <p>
+                        Whether treating acute seasonal ailments or managing complex lifestyle disorders, the approach remains constant: <em class="italic text-sage-700">Empathy, Evidence, and Excellence.</em>
+                    </p>
+                </div>
+
+                <div class="mt-10 grid grid-cols-2 gap-8 border-t border-stone-100 pt-8">
+                    <div>
+                        <span class="block text-3xl font-serif text-sage-700">2024</span>
+                        <span class="text-xs uppercase tracking-wider text-stone-500">Clinic Established</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-serif text-sage-700">11 PM</span>
+                        <span class="text-xs uppercase tracking-wider text-stone-500">Late Night Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-20 reveal-text">
+                <h2 class="font-serif text-4xl text-stone-900 mb-4">Curated Medical Expertise</h2>
+                <p class="text-stone-500 font-light">Comprehensive care modules designed for the modern individual.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+                
+                <div class="md:col-span-2 group relative overflow-hidden bg-white p-10 rounded-sm border border-stone-100 hover:shadow-2xl hover:shadow-sage-100/50 transition-all duration-500 reveal-text">
+                    <div class="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="activity" class="w-32 h-32 text-sage-500"></i>
+                    </div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-sans tracking-widest uppercase text-sage-600 mb-2 block">Primary Care</span>
+                            <h3 class="font-serif text-3xl text-stone-900 mb-4">General Medicine</h3>
+                            <p class="text-stone-600 font-light max-w-md">Expert diagnosis and treatment for acute illnesses, fevers, infections, and seasonal disorders. Your first line of defense for family health.</p>
+                        </div>
+                        <a href="#visit" class="inline-flex items-center gap-2 text-sm uppercase tracking-wider font-medium text-stone-800 group-hover:gap-4 transition-all">
+                            Consult Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:row-span-2 bg-sage-900 text-stone-100 p-10 rounded-sm flex flex-col justify-between group reveal-text transition-transform hover:-translate-y-2">
+                    <div>
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-md">
+                            <i data-lucide="droplet" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl mb-4">Diabetes & <br>Chronic Care</h3>
+                        <p class="text-sage-200 font-light leading-relaxed">
+                            Specialized management protocols for Diabetes (Type 1 & 2), Hypertension, and Thyroid disorders. 
+                            <br><br>
+                            We focus on lifestyle modification alongside medication to ensure long-term vitality.
+                        </p>
+                    </div>
+                    <ul class="space-y-3 text-sm text-sage-300 border-t border-white/10 pt-6 mt-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Sugar Level Monitoring</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Diet Counseling</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Foot Care Advice</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-10 rounded-sm border border-stone-100 hover:border-sage-200 transition-colors reveal-text">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-sage-600 mb-6"></i>
+                    <h3 class="font-serif text-2xl text-stone-900 mb-3">Preventive Health</h3>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed">Proactive health checkups and vaccinations to safeguard your future well-being before issues arise.</p>
+                </div>
+
+                <div class="bg-stone-200 p-10 rounded-sm flex flex-col justify-center items-center text-center reveal-text relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
+                    <div class="relative z-10">
+                        <h3 class="font-serif text-2xl text-stone-900 mb-2">Pain Management</h3>
+                        <p class="text-stone-600 text-sm mb-6">Effective relief for Migraines, Back Pain, and Joint issues.</p>
+                        <a href="https://wa.me/916361490577" class="px-6 py-2 bg-stone-900 text-white text-xs uppercase tracking-widest rounded-full hover:bg-sage-700 transition-colors">
+                            Book Slot
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="py-32 bg-stone-900 text-stone-100 relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-sage-900/50 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+            <div class="reveal-text">
+                <span class="text-sage-400 font-sans text-xs tracking-widest-xl uppercase mb-6 block">Location & Hours</span>
+                <h2 class="font-serif text-5xl mb-12">Visit the Sanctuary.</h2>
+                
+                <div class="space-y-12">
+                    <div class="flex gap-6">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-sage-400 mt-1"></i>
+                        <div>
+                            <p class="font-serif text-xl text-white mb-2">Dr. Khan's Clinic</p>
+                            <p class="text-stone-400 font-light leading-relaxed">
+                                156/A, Patil Chawl,<br>
+                                Baitulmal Masjid Complex,<br>
+                                Keshawapur, Hubli - 580023
+                            </p>
+                            <a href="https://maps.google.com/?q=Dr+Khans+Clinic+Hubli" target="_blank" class="inline-block mt-4 text-xs uppercase tracking-widest border-b border-sage-500 text-sage-400 hover:text-white transition-colors">
+                                Get Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <i data-lucide="clock" class="w-6 h-6 text-sage-400 mt-1"></i>
+                        <div>
+                            <p class="font-serif text-xl text-white mb-4">Consultation Hours</p>
+                            <div class="grid grid-cols-2 gap-x-12 gap-y-4 text-sm text-stone-400 font-light">
+                                <span>Morning Shift</span>
+                                <span class="text-white">10:00 am — 02:00 pm</span>
+                                
+                                <span>Evening Shift</span>
+                                <span class="text-white">05:00 pm — 11:00 pm</span>
+                                
+                                <span>Sunday</span>
+                                <span class="text-sage-400">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-10 rounded-sm border border-white/10 backdrop-blur-sm reveal-text">
+                <h3 class="font-serif text-2xl mb-8">Request an Appointment</h3>
+                <form class="space-y-6">
+                    <div class="group">
+                        <input type="text" placeholder="Your Name" class="w-full bg-transparent border-b border-stone-700 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-sage-500 transition-colors">
+                    </div>
+                    <div class="group">
+                        <input type="tel" placeholder="Phone Number" class="w-full bg-transparent border-b border-stone-700 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-sage-500 transition-colors">
+                    </div>
+                    <div class="group">
+                        <select class="w-full bg-transparent border-b border-stone-700 py-3 text-stone-400 focus:outline-none focus:border-sage-500 transition-colors">
+                            <option>General Consultation</option>
+                            <option>Diabetes Management</option>
+                            <option>Follow-up</option>
+                        </select>
+                    </div>
+                    <button type="button" class="w-full py-4 mt-4 bg-sage-600 text-white font-sans text-xs uppercase tracking-widest hover:bg-sage-500 transition-colors">
+                        Submit Request
+                    </button>
+                    <p class="text-center text-xs text-stone-600 mt-4">We will call you shortly to confirm the slot.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-600 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-2xl text-stone-300 block mb-2">Dr. Tabrez Khan</span>
+                <span class="text-xs uppercase tracking-widest">Medical Registration No: KMC-XXXXX</span>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-sage-900 hover:text-white transition-all">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-sage-900 hover:text-white transition-all">
+                    <i data-lucide="facebook" class="w-4 h-4"></i>
+                </a>
+                <a href="mailto:Tabrezkann87@gmail.com" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-sage-900 hover:text-white transition-all">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-[10px] uppercase tracking-widest">
+            &copy; 2025 Dr. Khans Clinic. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // 1. Text Reveal Animation on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+
+        // 2. Parallax Effect for Images
+        window.addEventListener('scroll', () => {
+            const parallaxImages = document.querySelectorAll('.parallax-img');
+            parallaxImages.forEach(img => {
+                const speed = 0.5;
+                const rect = img.parentElement.getBoundingClientRect();
+                const visible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (visible) {
+                    const yPos = (window.innerHeight - rect.top) * 0.05;
+                    img.style.transform = `scale(1.1) translateY(${yPos}px)`;
+                }
+            });
+        });
+
+        // 3. Navbar Frosted Glass Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-5');
+            } else {
+                navbar.classList.add('py-5');
+                navbar.classList.remove('py-3');
+            }
+        });
+
+        // 4. Magnetic Buttons (Micro-interaction)
+        const btns = document.querySelectorAll('.btn-magnetic');
+        btns.forEach(btn => {
+            btn.addEventListener('mousemove', function(e) {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+            });
+            btn.addEventListener('mouseleave', function() {
+                btn.style.transform = 'translate(0px, 0px)';
+            });
+        });
+    </script>
+</body>
+</html>
